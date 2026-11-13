@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recarga Free Fire — Demonstração</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><span class="menu">☰</span><div class="brand">BONUS FIRE</div><span style="background:var(--yellow);color:#111;border-radius:30px;padding:9px 15px;font-weight:bold">◎ Entrar</span></header>
+
+<div class="online-pill">● <b id="onlineCount">1.2 mil</b> visitantes <span style="opacity:.75">(simulado)</span></div>
+<div class="demo-toast" id="demoToast" role="status" aria-live="polite">
+  <div class="coin">💎</div>
+  <div><strong id="toastTitle">Atividade demonstrativa</strong><span id="toastText">Pacote de diamantes selecionado</span><em>NOTIFICAÇÃO SIMULADA — NÃO É UMA VENDA REAL</em></div>
+</div>
+<main>
+<div id="catalog">
+<div class="search">⌕ &nbsp; Busque jogos, gift cards e mais</div>
+<div class="hero"><strong>FREE FIRE</strong></div>
+<div class="trust"><span>✓ Oficial*</span><span>⚡ Na hora*</span><span>♙ Pagamento seguro*</span></div>
+<h3><span class="step">❶</span>Seu ID de jogo</h3>
+<label for="player">ID do jogador</label>
+<input id="player" inputmode="numeric" placeholder="Ex: 123456789" maxlength="20">
+<h3><span class="step">❷</span>Escolha seu pacote</h3>
+<div class="grid" id="packages"></div>
+<h3>Métodos de pagamento</h3>
+<div class="methods"><span class="method">🔷 Pix</span><span class="method">💳 Crédito ou débito</span><span class="method">🟩 PicPay</span><span class="method">◉ Boleto</span></div>
+<h3>Informações</h3>
+<div class="info"><div>▤ &nbsp; Sobre Free Fire</div><div>☷ &nbsp; Como comprar</div></div>
+<h3>Perguntas frequentes</h3>
+<div class="faq">
+<details><summary>Quanto tempo demoram os diamantes para chegar?</summary><p>O prazo depende do serviço de recarga utilizado.</p></details>
+<details><summary>Onde encontro meu ID do Free Fire?</summary><p>Abra o jogo, toque no perfil e copie o número de ID.</p></details>
+<details><summary>Vocês precisam da minha senha?</summary><p>Não informe sua senha neste formulário de demonstração.</p></details>
+<details><summary>Os diamantes valem no Free Fire MAX?</summary><p>Consulte as regras oficiais do jogo.</p></details>
+<details><summary>Posso recarregar para outra pessoa?</summary><p>Use o ID de jogador da pessoa que receberá a recarga.</p></details>
+<details><summary>O que é o Cartão Semanal ou Mensal?</summary><p>São produtos diferentes dos pacotes de diamantes.</p></details>
+</div>
+</div>
+<section id="checkout" class="hidden">
+<button class="back" id="back">← Voltar aos pacotes</button>
+<div class="checkout">
+<h1>Quase lá! Seu pedido foi criado com sucesso.</h1>
+<div class="sub">Confira os dados do seu pedido.</div>
+<div class="paybox">
+<h2>Resumo do pedido</h2>
+<div class="amount-due" id="summary"></div>
+<p id="playerSummary"></p>
+<hr class="rule">
+<h2>Pagamento via Pix</h2>
+<p>Copie o código Pix correspondente ao pacote selecionado e confira o valor e o destinatário no aplicativo do seu banco antes de pagar.</p>
+<div class="notice"><b>SIMULAÇÃO DE CHECKOUT.</b><br>O código exibido é o que foi cadastrado para este pacote. A página não confirma pagamentos automaticamente.</div>
+<div style="text-align:left;margin:16px 0 8px;font-size:12px;color:#ffe66b;font-weight:bold">PIX COPIA E COLA</div>
+<textarea id="pixCode" readonly rows="4" style="width:100%;background:#111;color:#fff;border:1px solid #555;border-radius:8px;padding:12px;font-size:12px;line-height:1.5;overflow-wrap:anywhere;resize:vertical"></textarea>
+<p id="pixRecipient" style="font-size:12px;color:#bbb">Destinatário informado no código: MIKAEL EDUARDO RODRIGUES</p>
+<p>O código e o valor são atualizados conforme o pacote escolhido.</p>
+<button class="copy" id="copyPix" type="button">Copiar código Pix</button>
+<button class="copy" id="copy" type="button" style="margin-top:9px;background:#333;color:#fff">Copiar resumo do pedido</button>
+</div>
+</div>
+</section>
+</main>
+<div class="bottom" id="bottom"><span id="chosenText" style="color:#aaa;font-size:12px">Nenhum pacote escolhido</span><button class="primary" id="continue" disabled>CONTINUAR &nbsp; ›</button></div>
+
+<script src="script.js"></script>
+</body>
+</html>
